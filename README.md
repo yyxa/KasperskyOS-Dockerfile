@@ -26,7 +26,7 @@ This Dockerfile simplifies the process of running KasperskyOS Community Edition 
 3. Build and run the Docker container:
 
     ```bash
-    docker-compose up
+    make up
     ```
 
     This command will fetch the necessary dependencies, download the KasperskyOS image, start the container and run the hello world example program.
@@ -34,7 +34,7 @@ This Dockerfile simplifies the process of running KasperskyOS Community Edition 
 4. Access the KasperskyOS container interactively:
 
     ```bash
-    docker exec -it kasperskyos-container /bin/bash
+    make cli
     ```
 
     Now you are inside the KasperskyOS container and can explore or run KasperskyOS commands.
@@ -42,7 +42,7 @@ This Dockerfile simplifies the process of running KasperskyOS Community Edition 
 5. When finished, stop and remove the container:
 
     ```bash
-    docker-compose down
+    make down
     ```
 
 ## Notes
